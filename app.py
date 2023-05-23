@@ -36,7 +36,7 @@ def fert_recommend():
         K = int(request.json['potassium'])
         # ph = float(request.form['ph'])
 
-        df = pd.read_csv('fertilizer.csv')
+        df = pd.read_csv('fertilizer data.csv')
 
         nr = df[df['Crop'] == crop_name]['N'].iloc[0]
         pr = df[df['Crop'] == crop_name]['P'].iloc[0]
